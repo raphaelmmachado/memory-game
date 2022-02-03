@@ -19,6 +19,7 @@ body{
     align-items: center;
 }
 .board{
+    cursor: pointer;
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(8, 1fr);
     gap: 10px;
@@ -68,6 +69,7 @@ body{
     top: 0;
 }
 .restart-button{
+    cursor: pointer;
     padding: 20px;
     font-size: 20px;
     background-color: blue;
