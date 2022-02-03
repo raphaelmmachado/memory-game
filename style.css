@@ -1,0 +1,78 @@
+/* position absolute, o elemento se baseia no pai se não tiver com o position padrão
+transform:rotatey para girar a carta
+transform-style:preserve-3d para a pagina entender como objeto 3d
+backface-visibility para não mostrar a parte de trás de cada carta. obs: cada carta são 2 divs mostrando apenas a parte da frente de cada uma
+*/
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Open+Sans:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Balsamiq Sans', cursive,sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: seagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(8, 1fr);
+    gap: 10px;
+}
+.card{
+    position: relative;
+    width: 100px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transition: transform .7s;
+}
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45) ;
+ backface-visibility: hidden;
+}
+.card-front{
+    transform: rotateY(180deg);
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3)
+}
+.card-back{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+.game-over{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 4rem;
+    top: 0;
+}
+.restart-button{
+    padding: 20px;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
