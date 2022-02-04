@@ -1,10 +1,10 @@
-# Live Preview
+### Live Preview
 https://rm0909.github.io/memory-game/
 
-# Build With
+### Build With
 HTML, CSS and Javascript
 
-# What i learned
+### What i learned
 
 - OOP Javascript
 - this
