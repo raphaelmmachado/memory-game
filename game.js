@@ -41,7 +41,8 @@ let game = {
     checkGameOver(){
         return this.cards.filter(card => !card.flipped).length == 0;
     },
-    clubs: ['flamengo',
+    clubs: [
+        'flamengo',
         'fluminense',
         'vasco',
         'botafogo',
@@ -52,7 +53,10 @@ let game = {
         'cruzeiro',
         'atletico-mineiro',
         'gremio',
-        'internacional'],
+        'internacional',
+        'atletico-paranaense',
+        'coritiba',
+    ],
 
     cards: null,
 

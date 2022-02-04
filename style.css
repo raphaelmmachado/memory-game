@@ -21,8 +21,11 @@ body{
 .board{
     cursor: pointer;
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(8, 1fr);
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-template: repeat(4, 1fr) / repeat(7, 1fr);
+    gap: 8px;
 }
 .card{
     position: relative;
@@ -69,12 +72,16 @@ body{
     top: 0;
 }
 .restart-button{
-    cursor: pointer;
+    
     padding: 20px;
     font-size: 20px;
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.876);
     color: white;
     border: none;
     border-radius: 10px;
     margin-top: 10px;
+}
+.restart-button:hover{
+    background-color: rgba(8, 107, 219, 0.876);
+    cursor: pointer;
 }
