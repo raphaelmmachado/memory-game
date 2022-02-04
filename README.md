@@ -1,5 +1,5 @@
 # Live Preview
-![]https://rm0909.github.io/memory-game/
+https://rm0909.github.io/memory-game/
 
 # Build With
 HTML, CSS and Javascript
