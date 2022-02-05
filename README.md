@@ -10,7 +10,7 @@ https://rm0909.github.io/memory-game/
 - OOP
 - Using the word this 
 - Creating multiples html elements using javascript
-  ### CSS
+### CSS
 - Position
 - Transition
 - Transform
