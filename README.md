@@ -1,4 +1,4 @@
-### Live Preview
+### Live Demo
 https://rm0909.github.io/memory-game/
 
 ### Build With
